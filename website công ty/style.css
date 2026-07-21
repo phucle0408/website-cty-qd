@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1f1f1f;
+  background-color: #ffffff;
+}
+
+/* Header mỏng nhẹ style hiện đại */
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+/* Logo QD với khối trắng nổi bật bên dưới */
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  background-color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e5e5e5;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  margin-left: 24px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+/* Khu vực trung tâm chuẩn style ChatGPT / Gemini */
+#gioithieu {
+  width: 100%;
+  min-height: calc(100vh - 60px); /* Lấy toàn bộ chiều cao còn lại của màn hình */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Căn giữa theo chiều dọc */
+  align-items: center;     /* Căn giữa theo chiều ngang */
+  
+  padding: 40px 20px;
+  text-align: center;      /* Căn giữa toàn bộ dòng chữ */
+}
+
+/* Khối nội dung chữ */
+.noidung {
+  max-width: 680px; /* Giới hạn độ rộng giống khung chat AI để chữ không bị loang ra 2 bên */
+  margin-bottom: 32px;
+}
+
+.noidung h1 {
+  margin: 0 0 16px 0;
+  font-size: 2.5rem; /* Chữ tiêu đề to nổi bật */
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #0d0d0d;
+}
+
+.noidung p {
+  margin: 6px 0;
+  font-size: 1.15rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Ảnh hiển thị ở trung tâm */
+#gioithieu img {
+  width: 100%;
+  max-width: 720px; /* Độ rộng tối đa của ảnh */
+  height: auto;
+  border-radius: 16px; /* Bo góc cong mềm mại kiểu AI app */
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08); /* Đổ bóng nhẹ tạo độ nổi */
+}
+
+/* Style riêng cho Trang Dịch vụ */
+
+/* Tiêu đề trang */
+.page-title {
+  text-align: center;
+  padding: 60px 20px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.page-title h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Danh sách dịch vụ - Dạng Grid 3 cột */
+.services-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Tự nhảy hàng khi màn hình nhỏ */
+  gap: 30px;
+}
+
+.service-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Hiệu ứng nổi nhẹ khi di chuột vào */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.service-card .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Khối kêu gọi hành động (CTA) */
+.cta-section {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  margin-top: 60px;
+  border-radius: 16px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #004085;
+}
+
+/* Đánh dấu menu trang hiện tại */
+nav a.active {
+  color: #0056b3;
+  font-weight: bold;
+}
