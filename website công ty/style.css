@@ -184,3 +184,227 @@ nav a.active {
   color: #0056b3;
   font-weight: bold;
 }
+
+/* Style riêng cho Trang Dự án */
+
+.projects-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.project-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Giúp ảnh không bị méo */
+}
+
+/* Nhãn phân loại dự án nổi lên trên ảnh */
+.project-img .badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: rgba(0, 86, 179, 0.9);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  font-size: 1.15rem;
+  margin: 0 0 8px 0;
+  color: #111;
+}
+
+.project-info .location {
+  font-size: 0.85rem;
+  color: #0056b3;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.project-info .desc {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Style riêng cho Trang Liên hệ */
+
+.contact-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+/* Cột thông tin liên hệ */
+.contact-info {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.contact-info h2 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  color: #111;
+}
+
+.contact-info .subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.info-item .icon {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.info-item strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.info-item p {
+  margin: 3px 0 0 0;
+  color: #555;
+}
+
+.info-item a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Nút liên hệ nhanh */
+.quick-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.btn-zalo, .btn-call {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn-zalo {
+  background-color: #0088fe;
+  color: #fff;
+}
+
+.btn-call {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Form liên hệ */
+.contact-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.contact-form h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #0056b3;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: #004085;
+}
