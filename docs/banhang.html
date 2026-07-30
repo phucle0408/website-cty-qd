@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bán Hàng - Công ty QD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">QD</div>
+      <nav>
+        <a href="./index.html">Trang chủ</a>
+        <a href="./dichvu.html">Dịch vụ</a>
+        <a href="./duan.html">Dự án</a>
+        <a href="./banhang.html" class="active">Bán hàng</a>
+        <a href="./lienhe.html">Liên hệ</a>
+      </nav>
+    </header>
+
+    <section class="page-title">
+      <h1>Bán Hàng & Tư Vấn Thiết Bị Điện Nhẹ</h1>
+      <p>
+        Chọn sản phẩm phù hợp, gửi yêu cầu báo giá và chúng tôi sẽ liên hệ ngay.
+      </p>
+    </section>
+
+    <section class="product-section">
+      <h2>Sản Phẩm & Thiết Bị Điện Nhẹ</h2>
+      <p>Cung cấp thiết bị chính hãng - Hỗ trợ khảo sát & thi công trọn gói</p>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <span class="badge">Bán chạy</span>
+          <img src="./image/anhcty.jpg" alt="Camera Wifi" />
+          <h3>Camera Wifi Ezviz C6N 2MP</h3>
+          <ul class="specs">
+            <li>Độ phân giải: Full HD 1080p</li>
+            <li>Xoay 360 độ, theo dõi chuyển động</li>
+            <li>Đàm thoại 2 chiều, hồng ngoại đêm</li>
+          </ul>
+          <div class="price">590.000đ <small>(Chưa gồm công lắp)</small></div>
+          <div class="card-actions">
+            <a
+              href="https://zalo.me/0988787585"
+              target="_blank"
+              class="btn btn-zalo"
+              >Tư vấn Zalo</a
+            >
+            <button
+              type="button"
+              class="btn btn-quote"
+              onclick="openQuoteModal('Camera Wifi Ezviz C6N')"
+            >
+              Báo giá trọn gói
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card highlight">
+          <span class="badge package">Gói Combo</span>
+          <img src="./image/anhcty.jpg" alt="Trọn gói Camera" />
+          <h3>Trọn Bộ 4 Camera IP Hikvision</h3>
+          <ul class="specs">
+            <li>4 Camera IP 2MP sắc nét</li>
+            <li>1 Đầu ghi hình 4 kênh + Ổ cứng 1TB</li>
+            <li>Miễn phí công lắp đặt & dây mạng</li>
+          </ul>
+          <div class="price">4.850.000đ <small>(Trọn gói A-Z)</small></div>
+          <div class="card-actions">
+            <a
+              href="https://zalo.me/0988787585"
+              target="_blank"
+              class="btn btn-zalo"
+              >Tư vấn Zalo</a
+            >
+            <button
+              type="button"
+              class="btn btn-quote"
+              onclick="openQuoteModal('Trọn Bộ 4 Camera Hikvision')"
+            >
+              Yêu cầu khảo sát
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="quoteModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeQuoteModal()">&times;</span>
+        <h3>Yêu Cầu Báo Giá & Khảo Sát</h3>
+        <p
+          id="selectedProductText"
+          style="color: #0066cc; font-weight: bold"
+        ></p>
+        <p id="formStatus" class="form-status"></p>
+        <form id="quoteForm" onsubmit="handleFormSubmit(event)">
+          <input
+            type="text"
+            id="customerName"
+            placeholder="Họ và tên của bạn *"
+            required
+          />
+          <input
+            type="tel"
+            id="customerPhone"
+            placeholder="Số điện thoại / Zalo *"
+            required
+          />
+          <textarea
+            id="customerNote"
+            placeholder="Địa chỉ hoặc ghi chú thêm (ví dụ: cần lắp cho nhà xưởng 200m2)..."
+            rows="3"
+          ></textarea>
+          <button type="submit" class="btn-submit">Gửi Yêu Cầu</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
