@@ -113,7 +113,22 @@
             placeholder="Địa chỉ hoặc ghi chú thêm (ví dụ: cần lắp cho nhà xưởng 200m2)..."
             rows="3"
           ></textarea>
-          <button type="submit" class="btn-submit">Gửi Yêu Cầu</button>
+          <div style="display: flex; gap: 10px; justify-content: space-between">
+            <button
+              type="button"
+              class="btn-submit"
+              onclick="handleQuoteSendZalo()"
+            >
+              💬 Gửi qua Zalo
+            </button>
+            <button
+              type="button"
+              class="btn-submit"
+              onclick="handleQuoteSendEmail()"
+            >
+              ✉️ Gửi qua Email
+            </button>
+          </div>
         </form>
       </div>
     </div>

@@ -122,7 +122,22 @@
             ></textarea>
           </div>
 
-          <button type="submit" class="btn-submit">Gửi yêu cầu ngay</button>
+          <div style="display: flex; gap: 10px; justify-content: space-between">
+            <button
+              type="button"
+              class="btn-submit"
+              onclick="handleContactSendZalo()"
+            >
+              💬 Gửi qua Zalo
+            </button>
+            <button
+              type="button"
+              class="btn-submit"
+              onclick="handleContactSendEmail()"
+            >
+              ✉️ Gửi qua Email
+            </button>
+          </div>
         </form>
       </div>
     </section>
