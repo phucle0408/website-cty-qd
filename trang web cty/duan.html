@@ -3,33 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dự Án Đã Thi Công - Công ty QD</title>
+    <title>Trang chủ - Công ty QD</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header dùng chung -->
     <header>
       <div class="logo">QD</div>
       <nav>
-        <a href="index.html">Trang chủ</a>
+        <a href="index.html" class="active">Trang chủ</a>
         <a href="dichvu.html">Dịch vụ</a>
-        <a href="duan.html" class="active">Dự án</a>
+        <a href="duan.html">Dự án</a>
         <a href="lienhe.html">Liên hệ</a>
       </nav>
     </header>
 
-    <!-- Tiêu đề trang -->
-    <section class="page-title">
-      <h1>Dự Án Đã Thi Công</h1>
-      <p>
-        Một số công trình tiêu biểu về điện nhẹ, camera và hạ tầng mạng chúng
-        tôi đã hoàn thành.
-      </p>
+    <div id="gioithieu">
+      <div class="noidung">
+        <h1>Chào mừng bạn đến với công ty QD</h1>
+        <p>Chúng tôi chuyên thi công về điện nhẹ, camera và mạng,...</p>
+        <p>Chúng tôi luôn đặt chất lượng lên hàng đầu</p>
+      </div>
+      <img src="../image/anhcty.jpg" alt="Ảnh công ty" />
+    </div>
+
+    <section
+      class="cta-section"
+      style="margin: 20px auto 40px; padding: 24px 20px"
+    >
+      <h2>Bạn cần tư vấn hoặc muốn yêu cầu báo giá ngay?</h2>
+      <p>Gọi Zalo hoặc mở trang liên hệ để gửi thông tin nhanh nhất.</p>
+      <div
+        class="quick-buttons"
+        style="justify-content: center; flex-wrap: wrap"
+      >
+        <a href="https://zalo.me/0988787585" target="_blank" class="btn-zalo"
+          >💬 Chat Zalo</a
+        >
+        <a href="lienhe.html" class="btn-call">📩 Yêu cầu ngay</a>
+      </div>
     </section>
 
-    <!-- Danh sách Dự án dạng Card -->
+    <section class="page-title">
+      <h1>Dự Án Nổi Bật</h1>
+      <p>Những công trình tiêu biểu mà chúng tôi đã thực hiện.</p>
+    </section>
+
     <section class="projects-container">
-      <!-- Dự án 1 -->
       <div class="project-card">
         <div class="project-img">
           <img src="../image/anhcty.jpg" alt="Dự án Camera" />
@@ -45,7 +64,6 @@
         </div>
       </div>
 
-      <!-- Dự án 2 -->
       <div class="project-card">
         <div class="project-img">
           <img src="../image/anhcty.jpg" alt="Dự án Mạng LAN" />
@@ -57,22 +75,6 @@
           <p class="desc">
             Đi dây mạng âm tường, lắp đặt Tủ Rack, Server và cấu hình Wifi Mesh
             phủ sóng toàn bộ văn phòng 50 nhân sự.
-          </p>
-        </div>
-      </div>
-
-      <!-- Dự án 3 -->
-      <div class="project-card">
-        <div class="project-img">
-          <img src="../image/anhcty.jpg" alt="Dự án Điện nhẹ" />
-          <span class="badge">Điện nhẹ</span>
-        </div>
-        <div class="project-info">
-          <h3>Hệ Thống Kiểm Soát Ra Vào (Access Control)</h3>
-          <p class="location">📍 Tòa nhà VP, Hà Nội</p>
-          <p class="desc">
-            Thi công cửa từ chấm công khuôn mặt & vân tay kết hợp khóa từ an
-            ninh cho các phòng ban cao cấp.
           </p>
         </div>
       </div>
